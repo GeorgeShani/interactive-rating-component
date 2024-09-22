@@ -1,0 +1,104 @@
+.message-container {
+    background: radial-gradient(at top, #232A34 0%, #181E27 100%);
+    border-radius: 30px;
+    padding: 4.4rem 3.2rem;
+    width: 41.2rem;
+    min-height: 41.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    width: 16.2rem;
+    min-height: 10.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    background-color: #262E38;
+    border-radius: 24px;
+    width: 19.3rem;
+    min-height: 3.2rem;
+    margin: 2.8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: #FC7614;
+}
+
+.thanks {
+    width: 16.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanks h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.545rem;
+    color: #fff;
+}
+
+.appreciation {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.appreciation p {
+    font-size: 1.55rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-align: center;
+    color: #969FAD;
+}
+
+@media screen and (max-width: 37.5rem) {
+    .message-container {
+        padding: 3.6rem 2.4rem;
+        width: 32.7rem;
+        min-height: 36.0rem;
+    }
+
+    .image-container {
+        width: 14.4rem;
+        height: 9.6rem;
+    }
+
+    .message {
+        width: 16.8rem;
+        margin: 2.2rem 0;
+    }
+
+    .message p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    .thanks h1 {
+        font-size: 2.4rem;
+        line-height: 3.038rem;
+    }
+
+    .appreciation {
+        margin-top: 0.7rem;
+    }
+
+    .appreciation p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+}

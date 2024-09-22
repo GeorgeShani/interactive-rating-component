@@ -1,0 +1,149 @@
+.rating-container {
+    background: radial-gradient(at top, #232A34 0%, #181E27 100%);
+    border-radius: 30px;
+    padding: 3.2rem;
+    width: 41.2rem;
+    height: 41.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.rating-star {
+    background-color: #262E38;
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.rating-star i {
+    font-size: 1.6rem;
+    color: #FC7614;
+}
+
+.title h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.545rem;
+    color: #ffffff;
+    margin: 3rem 0 1.5rem;
+}
+
+.description p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: #969FAD;
+}
+
+.rating-buttons {
+    width: 100%;
+    min-height: 5.1rem;
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating-buttons .rating-btn {
+    background-color: #262E38;
+    border-radius: 50%;
+    border: none;
+    width: 5.1rem;
+    height: 5.1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: #7C8798;
+    transition: all 250ms ease-in-out;
+}
+
+.rating-buttons .rating-btn:hover {
+    background-color: #7C8798;
+    color: #fff;
+}
+
+.rating-buttons .rating-btn:active,
+.rating-buttons .rating-btn.selected {
+    background-color: #FC7614;
+    color: #fff;
+}
+
+.submit-button-cont {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button-cont .submit-btn {
+    background-color: #FC7614;
+    border-radius: 24px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.899rem;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 250ms ease-in-out;
+}
+
+.submit-button-cont .submit-btn:hover {
+    background-color: #fff;
+    color: #FC7614;
+}
+
+@media screen and (max-width: 37.5rem) {
+    .rating-container {
+        padding: 2.4rem;
+        width: 32.7rem;
+        height: 36rem;
+    }
+
+    .rating-star {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .rating-star i {
+        font-size: 1.6rem;
+    }
+
+    .title h1 {
+        font-size: 2.4rem;
+        margin: 1.8rem 0 1rem 0;
+    }
+
+    .description p {
+        font-size: 1.4rem;
+    }
+
+    .rating-buttons {
+        margin: 2rem 0;
+    }
+
+    .rating-buttons .rating-btn {
+        font-size: 1.4rem;
+        width: 4.2rem;
+        height: 4.2rem;
+    }
+
+    .submit-button-cont {
+        height: 4.5rem;
+    }
+
+    .submit-button-cont .submit-btn {
+        font-size: 1.4rem;
+    }
+}
