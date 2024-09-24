@@ -8,7 +8,7 @@ export default function Message(props) {
                 <img src={MessageImage} alt="" />
             </div>
             <div className="message">
-                <p>{props.message}</p>
+                <p>{`You selected ${props.rating} out of 5`}</p>
             </div>
             <div className="thanks">
                 <h1>Thank you!</h1>

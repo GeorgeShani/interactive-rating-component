@@ -1,16 +1,13 @@
-import { useState } from "react";
 import "./RatingPrompt.css";
 
-export default function RatingPrompt(props) {   
-    const [selectedRating, setSelectedRating] = useState(null);
-
+export default function RatingPrompt(props) {
     const handleRating = (ratingValue) => {
-        setSelectedRating(ratingValue);
+        props.setRating(ratingValue);
     };
 
     const handleSubmit = () => {
-        if (selectedRating !== null) {
-            props.handleSubmit(selectedRating);
+        if (props.rating !== 0) {
+            props.setShowMessage(true);
         } else {
             alert("Please select a rating before submitting.");
         }
@@ -19,7 +16,7 @@ export default function RatingPrompt(props) {
     return (
         <div className="rating-container">
             <div className="rating-star">
-                <i class="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
             </div>
             <div className="title">
                 <h1>How did we do?</h1>
@@ -31,7 +28,7 @@ export default function RatingPrompt(props) {
                 {[1, 2, 3, 4, 5].map((rating) => (
                     <button
                         key={rating}
-                        className={`rating-btn ${selectedRating === rating ? "selected" : ""}`}
+                        className={`rating-btn ${props.rating === rating ? "selected" : ""}`}
                         onClick={() => handleRating(rating)}
                     >
                         {rating}

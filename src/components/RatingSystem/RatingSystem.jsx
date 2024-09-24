@@ -4,18 +4,18 @@ import Message from "../Message/Message";
 
 export default function RatingSystem() {
     const [rating, setRating] = useState(0);
-    const [message, setMessage] = useState("");
-
-    const handleSubmit = (selectedRating) => {
-        setMessage(`You selected ${selectedRating} out of 5`);
-        setRating(selectedRating);
-    };
+    const [showMessage, setShowMessage] = useState(false);
 
     return (
         <>
-            {rating === 0 ?
-                <RatingPrompt handleSubmit={handleSubmit} /> :
-                <Message message={message} />
+            {
+                showMessage === false ?
+                <RatingPrompt
+                    rating={rating}
+                    setRating={setRating}
+                    setShowMessage={setShowMessage}
+                /> :
+                <Message rating={rating} />
             }
         </>
     );
